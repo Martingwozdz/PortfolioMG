@@ -1,0 +1,105 @@
+
+/* SECCION S K I L L S */
+.skills {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.756)),url(../images//skills.jpg);
+    background-size: 1450px; /* Ajusta la imagen para ser el 50% del tamaño del contenedor */
+    background-position: center;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+.skills .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.skills .fila {
+    display: flex;
+}
+.skills .fila .col {
+    width: 50%;
+    padding: 0 20px;
+}
+.skills .fila .col h3 {
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.skills .skill > span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+.skills .skill .barra-skill {
+    height: 8px;
+    width: 80%;
+    background-color: #131517;
+    position: relative;
+    margin-bottom: 30px;
+}
+.skills .skill .progreso {
+    background-color:#ffcc00;
+    height: 8px;
+    width: 0%; /* Inicia en 0% */
+    position: relative;
+    transition: width 2s ease-in-out; /* Animación para expandir la barra */
+}
+.skills .skill .barra-skill span {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color:#ffcc00;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+    top: -17px;
+    right: -15px;
+    font-size: 14px;
+}
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav {
+        display: none;
+    }
+    .nav-responsive {
+        display: block;
+    }
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul {
+        display: block !important;
+    }
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px) {
+    .sobremi .fila {
+        display: block;
+    }
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+
+    .skills .fila {
+        display: block;
+    }
+    .skills .fila .col {
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill {
+        width: 100%;
+    }
+}
